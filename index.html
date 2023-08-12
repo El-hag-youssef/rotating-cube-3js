@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rotator cube</title>
+
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html{
+        height: 100%;
+      }
+
+      body{
+        overflow: hidden;
+        background: #0c015ecb;
+        position: relative;
+        height: 100%;
+       
+        /* background: linear-gradient(rgb(33, 22, 76),rgb(105, 105, 105) ,rgb(49, 49, 49)); */
+      }
+
+      #ss{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 6;
+      }
+
+      .data{
+        z-index: 4;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+       
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 35px;
+      }
+
+      .data h1{
+        color: #fff;
+        font-size: 65px;
+        font-style: bold;
+        line-height: 2rem;
+        
+
+
+        
+      }
+
+      .data p {
+        color:#b9b9b9d4;
+        font-size: 35px;
+      }
+
+      .data span{
+        color:#915eff
+      }
+
+
+      .glory1{
+        position: absolute;
+        top: 20%;
+        left:20% ;
+        z-index: -10;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        background: #0fdbff;
+        filter: blur(100px);
+      }
+
+      .glory2{
+        position: absolute;
+        bottom: 60%;
+        right:10% ;
+        z-index: -10;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background: #273fb8;
+        filter: blur(60px);
+      }
+      .glory3{
+        position: absolute;
+        bottom: 5%;
+        left:50% ;
+        z-index: -10;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background: #ff0fab;
+        filter: blur(100px);
+      }
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body >
+    <canvas id="ss"></canvas>
+
+    <div class="data">
+      <h1>Hi, I am <span>Mohamed</span> </h1>
+      <p> i am MERN developer </p>
+      <p>but, i am intereting in threejs library</p>
+
+
+    </div>
+
+    <span class="glory1"></span>
+    <span class="glory2"></span>
+    <span class="glory3"></span>
+    <span class="glory4"></span>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
